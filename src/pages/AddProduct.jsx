@@ -46,7 +46,7 @@ const AddProduct = () => {
         formData.append('images', images[i]);
       }
 
-      await axios.post('http://localhost:8000/api/product', formData, {
+      await axios.post('http://54.199.44.116:8000/api/product', formData, {
         headers: { 'Content-Type': 'multipart/form-data' }
       });
 
