@@ -49,7 +49,7 @@ function AllProducts() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:8000/api/product").then((response) => {
+    axios.get("http://54.199.44.116:8000/api/product").then((response) => {
       setProducts(response.data);
     });
   }, []);
